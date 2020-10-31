@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Egypt's Main Cities</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Cairo" class="your-active-class">
+      <div class="landing__container">
+        <h2>Cairo</h2>
+
+        <p>Cairo, Egypt’s sprawling capital, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of antiquities including royal mummies and gilded King Tutankhamun artifacts. Nearby, Giza is the site of the iconic pyramids and Great Sphinx, dating to the 26th century BC. In Gezira Island’s leafy Zamalek district, 187m Cairo Tower affords panoramic city views.</p>
+
+      </div>
+    </section>
+    <section id="section2" data-nav="Alexandria" >
+      <div class="landing__container">
+        <h2>Alexandria</h2>
+
+        <p>Alexandria is a Mediterranean port city in Egypt. During the Hellenistic period, it was home to a lighthouse ranking among the Seven Wonders of the Ancient World as well as a storied library. Today the library is reincarnated in the disc-shaped, ultramodern Bibliotheca Alexandrina. The city also has Greco-Roman landmarks, old-world cafes and sandy beaches. Its 15th-century seafront Qaitbay Citadel is now a museum.</p>
+
+      </div>
+    </section>
+    <section id="section3" data-nav="Aswan">
+      <div class="landing__container">
+        <h2>Aswan</h2>
+
+        <p>Aswan, a city on the Nile River, has been southern Egypt’s strategic and commercial gateway since antiquity. It contains significant archaeological sites like the Philae temple complex, on Agilkia Island near the landmark Aswan Dam. Philae’s ruins include the columned Temple of Isis, dating to the 4th century B.C. Downriver, Elephantine Island holds the Temple of Khnum, from the Third Dynasty.</p>
+      
+      </div>
+    </section>
+    <section id="section4" data-nav="Luxor">
+      <div class="landing__container">
+        <h2>Luxor</h2>
+
+        <p>Luxor is a city on the east bank of the Nile River in southern Egypt. It's on the site of ancient Thebes, the pharaohs’ capital at the height of their power, during the 16th–11th centuries B.C. Today's city surrounds 2 huge, surviving ancient monuments: graceful Luxor Temple and Karnak Temple, a mile north. The royal tombs of the Valley of the Kings and the Valley of the Queens are on the river’s west bank.</p>
+
+      </div>
+    </section>
+    <section id="section5" data-nav="Sharm El-Sheikh">
+      <div class="landing__container">
+        <h2>Sharm El-Sheikh</h2>
+
+        <p>Sharm el-Sheikh is an Egyptian resort town between the desert of the Sinai Peninsula and the Red Sea. It's known for its sheltered sandy beaches, clear waters and coral reefs. Naama Bay, with a palm tree-lined promenade, is filled with bars and restaurants. Ras Muhammad National Park is a major diving destination, with marine life around the Shark and Yolanda reefs and the Thistlegorm wreck.</p>
+
+      </div>
+    </section>
+    <section id="section6" data-nav="Hurghada">
+      <div class="landing__container">
+        <h2>Hurghada</h2>
+
+        <p>Hurghada is a beach resort town stretching some 40km along Egypt’s Red Sea coast. It’s renowned for scuba diving, and has numerous dive shops and schools in its modern Sekalla district. There are many restaurants, bars and nightclubs, while the old town, El Dahar, is home to traditional Egyptian coffee shops and souks. Hurghada’s long stretch of sandy beach is lined with resort hotels.</p>
+
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
